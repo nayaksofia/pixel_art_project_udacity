@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+     crossorigin="anonymous">
+     <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <title>Pixel Art Maker! Sofia</title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton"> -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<!--Use Scrollspy-->
+<body data-spy="scroll" data-target="#navbar-site" data-offset="0">
+<!--Navigation-->
+<nav id="navbar-site" class="navbar bg-success navbar-dark navbar-expand-sm sticky-top">
+        <div class="container-fluid">
+<!--Adding Logo Image-->
+<a href="index.html" class="navbar-brand d-none d-sm-inline-block">
+    <img class="logo-img rounded" src="img/logo_sofia.jpg" alt="logo">
+</a>
+<!--Adding Hamburger Menu Button-->
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myTogglerNav" aria-controls="myTogglerNav"
+ aria-expanded="false" aria-label="Toggle Navigation">
+ <span class="navbar-toggler-icon"></span><!--Navbar Icon-->
+</button>
+<div class="collapse navbar-collapse" id="myTogglerNav">
+        <span class="navbar-text d-none d-xl-inline-block"> SOFIA : PIXEL ART MAKER </span>
+        <ul class="navbar-nav ml-sm-auto">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home
+            <span class="sr-only">(current)</span></a>
+            </li>
+            <!--Adding Dropdown Navigation-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="featuredWorkDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 File
+                </a>
+                <div class="dropdown-menu" aria-labelledby="featuredWorkDropdown">
+                        <a class="dropdown-item" href="#">Insert Grid</a>
+                        <a class="dropdown-item" href="#">Clear Grid</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">UNDO</a>
+                        <a class="dropdown-item" href="#">REDO</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="featuredWorkDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tools</a>
+                <div class="dropdown-menu" aria-labelledby="featuredWorkDropdown">
+                        <!-- <a class="dropdown-item" href="#">Pencil</a>
+                        <a class="dropdown-item" href="#">Eraser</a> -->
+                        <a class="dropdown-item" href="#">Color Picker</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">DELETE</a>
+                        <a class="dropdown-item" href="#">SAVE</a>
+                </div>
+            </li>
+            <!--Create New Page for these links-->
+            <li class="nav-item"><a class="nav-link" href="#">FYI</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Feedback</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+        </ul>
+        <!--Adding Form Element-->
+        <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+            <div class="input-group">
+                <label class="sr-only" for="search">Search</label>
+                <input class="form-control mr-sm-2" type="text" id="search" placeholder="Search for.." aria-label="search">
+                <div class="input-grup-append">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Go</button>
+                </div>
+            </div>
+        </form>
+    </div><!--collapse-->
+</div><!--container-->
+</nav> <!--nav-->
+
+  <!--Add Heading-->
+  <div class="container-fluid padding" id="udacityLab">
+        <div class="row featured text-center">
+            <hr>
+            <div class="col-12"> 
+            <h1 class="display-3">PIXEL ART MAKER</h1>
+            </div>
+            <hr>
+        </div> <!--row-->
+        </div> <!--container-fluid-->
+
+  <!--Choose Grid Size Form-->
+  <div class="container-fluid padding">
+        <div class="row featured text-center">
+            <div class="col-12"> 
+            <h2>Choose Grid Size</h2>
+            </div>
+    </div> <!--row-->
+    </div> <!--container-->
+    <div class="container-fluid">
+        <form id="sizePicker">
+        <div class="form-input form-row">
+           <div class="col-6">
+                <div class="form-group">
+                       <label for="gridHeight"><h6>Grid Height:</h6></label> 
+                        <input type="number" id="inputHeight" name="height" min="1" value="1">    
+                </div>
+            </div> <!--col-->
+            <div class="col-6">
+                <div class="form-group">
+                        <label for="gridWidth"><h6>Grid Width:</h6></label> 
+                        <input type="number"  id="inputWidth" name="width" min="1" value="1">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col input-grup-append">
+                        <button type="submit" class="btn btn-warning my-2 my-sm-0">Submit</button>
+                    </div>
+                </div>
+            </div>
+               
+        </div> <!--form-row-->
+     </form>
+    </div> <!--Container-->
+    <div class="container-fluid padding">
+        <div class="row featured text-center">
+            <div class="col-12"> 
+                <h2>Pick A Color</h2>
+                <div class="col-12">
+                 <input type="color" id="colorPicker">
+                </div> <!--col-->
+            </div>
+        </div> <!--row-->
+    </div> <!--container-fluid-->
+
+    <div class="container-fluid padding">
+         <div class="row featured text-center">
+            <div class="col-12"> 
+                <h2>Design Canvas</h2>
+            </div> <!--Col-->
+         </div> <!--row-->       
+    </div> <!--container-fluid-->
+    <div class="container-fluid padding">
+        <div class="row">
+                <div class="col-12">
+                        <table id="pixelCanvas"></table> 
+                </div> <!--col-->
+        </div><!--row-->
+    </div> <!--conainer-fluid-->
+  <!--Clear Grid-->
+  <!-- <div class="container">
+        <div class="row featured text-center mt-4">
+           <div class="col"> 
+                <button type="submit" class="btn btn-warning toogleGrid">TOGGLE</button>   
+           </div>   
+           <div class="col"> 
+                <button type="submit" class="btn btn-warning clearGrid">CLEAR</button>  
+           </div> 
+           <div class="col"> 
+                <button type="submit"  class="btn btn-warning showGrid">SHOW</button>   
+           </div>     
+   </div>  -->
+  <!--Undo & Redo-->
+  <!--LogIn-->
+ <!--Footer-->
+ <footer>
+        <div class="container-fluid padding">
+        <div class="row text-center padding">
+        <div class="col-12">
+         <hr class="light">
+         <h6 class="e-mail">E-mail: nayaksofia_18@outlook.com</h6>
+         <h6>CopyRight&copy;Sofia 2018</h6>
+        </div> <!--col-->  
+        </div> <!--row-->
+        </div> <!--container-fluid-->             
+    </footer>
+  
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--jQuery Reference File-->
+    <script src="js/designs.js"></script> 
+    <script src="js/jquery-3.3.1.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

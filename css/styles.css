@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&subset=greek,cyrillic');
+body {
+    text-align: center;
+  }
+  /*Logo image style
+___________________________________________________________________*/
+.logo-img{ 
+  width: 50px;  
+}
+
+/*Background Image */
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background: url('../img/bg_img2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: whitesmoke;
+}
+/*Navbar
+______________________________________*/
+.navbar{
+  padding: 0.8rem;
+  color: white;
+}
+.navbar li{
+  padding-right: 20px;
+}
+.nav-link{
+  font-size: 1.1em !important;
+}
+  h1 {
+    font-family: 'Roboto', sans-serif;;
+    font-size: 70px;
+    margin: 0.2em;
+  }
+  
+  h2 {
+    margin: 1em 0 0.25em;
+    text-decoration: underline;
+  }
+  
+  h2:first-of-type {
+    margin-top: 0.5em;
+  }
+  
+  table,
+  tr,
+  td {
+    border: 1px solid whitesmoke;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  tr {
+    height: 20px;
+  }
+  
+  td {
+    width: 20px;
+  }
+  
+  input[type="number"] {
+    width: 8em;
+    border: 2px solid brown;
+    text-align: center;
+  }
+  /*padding
+_______________________________________________________________________________*/
+.padding{
+  padding: 2px;
+}
+.featured{
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+.featured hr {
+  border-top: 2px solid greenyellow;
+  width: 95%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+  /*footer Section
+  _________________________________________________________________________________*/
+  footer{
+    /* background-color: #159ad8; */
+    color: yellow;
+    padding-top: 2rem;
+}
+hr.light{
+    border-top: 1px solid #66cdaa;
+    width: 100%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+  
