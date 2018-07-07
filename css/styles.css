@@ -127,7 +127,7 @@ hr.light{
     font-size: 250%;
   }
 }
-@media screen and (min-width:251px) and (max-width:768px){
+@media screen and (min-width:251px) and (max-width:576px){
   html, body {
     height: 100%;
     width: 100%;
@@ -152,7 +152,7 @@ hr.light{
     font-size: 300%;
   }
 }
-@media screen and (min-width:769px) and (max-width:1400){
+@media screen and (min-width:577px) and (max-width:768){
   html, body {
     height: 100%;
     width: 100%;
@@ -175,5 +175,30 @@ hr.light{
   }
   .display-3{
     font-size: 400%;
+  }
+}
+@media screen and (min-width:769px) and (max-width:1400){
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+  }
+  table,
+  tr,
+  td {
+    border: 1px solid brown;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  } 
+  tr {
+    height: 30px;
+  } 
+  td {
+    width: 30px;
+  }
+  .display-3{
+    font-size: 500%;
   }
 }
