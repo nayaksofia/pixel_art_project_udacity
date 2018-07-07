@@ -13,15 +13,14 @@ html, body{
   height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif;
-  background: url('../img/bg_img2.jpg') no-repeat center center fixed;
+  background: url('../img/bg_light_pink_flower_img.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: whitesmoke;
+  color: rgb(204, 45, 45);
 }
 /*Navbar
 ______________________________________*/
 .navbar{
   padding: 0.8rem;
-  color: white;
 }
 .navbar li{
   padding-right: 20px;
@@ -29,38 +28,33 @@ ______________________________________*/
 .nav-link{
   font-size: 1.1em !important;
 }
-  h1 {
-    font-family: 'Roboto', sans-serif;;
-    font-size: 70px;
+ h1 {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
     margin: 0.2em;
   }
   
-  h2 {
+  h2{
     margin: 1em 0 0.25em;
     text-decoration: underline;
   }
-  
   h2:first-of-type {
     margin-top: 0.5em;
   }
-  
   table,
   tr,
   td {
-    border: 1px solid whitesmoke;
+    border: 1px solid brown;
   }
-  
   table {
     border-collapse: collapse;
     margin: 0 auto;
-  }
-  
+  } 
   tr {
-    height: 20px;
-  }
-  
+    height: 30px;
+  } 
   td {
-    width: 20px;
+    width: 30px;
   }
   
   input[type="number"] {
@@ -78,7 +72,7 @@ _______________________________________________________________________________*
   padding-top: 1rem;
 }
 .featured hr {
-  border-top: 2px solid greenyellow;
+  border-top: 2px solid rgb(245, 38, 165);
   width: 95%;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -87,14 +81,97 @@ _______________________________________________________________________________*
   _________________________________________________________________________________*/
   footer{
     /* background-color: #159ad8; */
-    color: yellow;
+    color: brown;
     padding-top: 2rem;
 }
 hr.light{
-    border-top: 1px solid #66cdaa;
+    border-top: 1px solid rgb(245, 38, 165);
     width: 100%;
     margin-top: 0.8rem;
     margin-bottom: 1rem;
 }
 
-  
+@media screen and (max-width:250px ){
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+  }
+  table,
+  tr,
+  td {
+    border: 1px solid brown;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  } 
+  tr {
+    height: 10px;
+  } 
+  td {
+    width: 10px;
+  }
+  .navbar{
+    padding: 0.4rem;
+  }
+  .navbar li{
+    padding-right: 10px;
+  }
+  .nav-link{
+    font-size: 0.8em !important;
+  }
+  .display-3{
+    font-size: 250%;
+  }
+}
+@media screen and (min-width:350px){
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+  }
+  table,
+  tr,
+  td {
+    border: 1px solid brown;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  } 
+  tr {
+    height: 15px;
+  } 
+  td {
+    width: 15px;
+  }
+  .display-3{
+    font-size: 300%;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1300){
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+  }
+  table,
+  tr,
+  td {
+    border: 1px solid brown;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  } 
+  tr {
+    height: 30px;
+  } 
+  td {
+    width: 30px;
+  }
+  .display-3{
+    font-size: 450%;
+  }
+}

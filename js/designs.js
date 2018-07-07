@@ -33,17 +33,17 @@ $("document").ready(function(){
     $(this).css("background-color","");
   });
   //to remove the grid 
-  // $( ".clearGrid" ).click(function() {
-  //   $("#pixelCanvas" ).remove();
-  // });
+  $( ".clearGrid" ).click(function() {
+    $("#pixelCanvas" ).html('');
+  });
   // //to show the grid
   // $( ".showGrid" ).click(function() {
   //   $("#pixelCanvas" ).show();
   // });
-  //to toggle the grid
-  // $( ".toogleGrid" ).click(function() {
-  //   $("#pixelCanvas" ).toggle();
-  // });  
+ // to toggle the grid
+  $( ".toogleGrid" ).click(function() {
+    $("#pixelCanvas" ).toggle();
+  });  
 });
 
 
