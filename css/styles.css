@@ -125,7 +125,7 @@ hr.light{
     font-size: 250%;
   }
 }
-@media screen and (max-width:350px){
+@media screen and (min-width:350px) and (max-width:550px){
   html, body {
     height: 100%;
     width: 100%;
@@ -150,7 +150,7 @@ hr.light{
     font-size: 300%;
   }
 }
-@media screen and (min-width:768px) and (max-width:1300){
+@media screen and (min-width:551px) and (max-width:1300){
   html, body {
     height: 100%;
     width: 100%;
@@ -172,6 +172,6 @@ hr.light{
     width: 30px;
   }
   .display-3{
-    font-size: 450%;
+    font-size: 400%;
   }
 }
