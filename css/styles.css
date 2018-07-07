@@ -96,6 +96,8 @@ hr.light{
     height: 100%;
     width: 100%;
     margin: auto;
+    background: url('../img/bg_light_pink_flower_img.jpg') no-repeat center center fixed;
+    background-size: cover;
   }
   table,
   tr,
@@ -129,6 +131,8 @@ hr.light{
   html, body {
     height: 100%;
     width: 100%;
+    background: url('../img/bg_light_pink_flower_img.jpg') no-repeat center center fixed;
+    background-size: cover;
     margin: auto;
   }
   table,
@@ -154,6 +158,8 @@ hr.light{
   html, body {
     height: 100%;
     width: 100%;
+    background: url('../img/bg_light_pink_flower_img.jpg') no-repeat center center fixed;
+    background-size: cover;
     margin: auto;
   }
   table,
